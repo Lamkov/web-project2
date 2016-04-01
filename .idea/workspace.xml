@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bca1fb74-49ca-457d-b881-06badfb2a7e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="bca1fb74-49ca-457d-b881-06badfb2a7e2" name="Default" comment="" />
     <ignored path="web-project2.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -154,7 +152,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="357" y="302" width="1397" height="626" extended-state="0" />
+    <frame x="357" y="302" width="1397" height="626" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
