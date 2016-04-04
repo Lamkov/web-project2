@@ -65,20 +65,43 @@
     font-weight: normal;
     font-style: normal;
 }
-/*container and stuff */
+/*Base*/
 * {
     padding: 0;
     margin: 0;
     border: 0;
 }
+html {
+    font-size: 1px;
+}
+body {
+    font-size: 14rem;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
 /*header*/
+header {
+    background-color: #e9e9e9;
+    height: 30px;
+    border-bottom: 1px solid #cccccc;
+}
+.notification {
+    position: absolute;
+    top: 0;
+    right: 50px;
+    line-height: 25rem;
+    text-decoration: none;
+}
 .rectangle {
     width: 220px;
     height: 30px;
     background-color: #f52c66;
     color: #ffffff;
     font-family: 'Aleo', sans-serif;
-    font-size: 16px;
+    font-size: 16rem;
     text-align: center;
     margin: auto;
     border: none;
@@ -89,4 +112,61 @@
     border-left: 110px solid transparent;
     border-right: 110px solid transparent;
     border-top: 25px solid #f52c66;
+}
+.tabs li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    font-family: 'aleoregular', sans-serif;
+    font-size: 16rem;
+    height: 30px;
+    line-height: 30px;
+}
+.tabs .active {
+    background-color: #ffffff;
+}
+/* Scaffolding --------------------------------------------------------------*/
+
+/* Typography ---------------------------------------------------------------*/
+
+/* Iconography --------------------------------------------------------------*/
+
+/* Buttons ------------------------------------------------------------------*/
+
+/* Forms --------------------------------------------------------------------*/
+
+/* Container sizes ----------------------------------------------------------*/
+
+/* Navbar -------------------------------------------------------------------*/
+
+/* Tabs ---------------------------------------------------------------------*/
+
+/* Thumbnails ---------------------------------------------------------------*/
+
+/* Carousel -----------------------------------------------------------------*/
+
+/* Page Layout --------------------------------------------------------------*/
+
+
+
+/* Mobile View --------------------------------------------------------------*/
+@media (max-width: 767px) {
+    .container {
+        width: 320px;
+    }
+
+}
+/* Tablet View --------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 999px) {
+    .container {
+        width: 768px;
+    }
+
+}
+/* Desktop View -------------------------------------------------------------*/
+@media (min-width: 1000px) {
+    .container {
+        width: 940px;
+    }
+
 }
