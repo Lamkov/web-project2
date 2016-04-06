@@ -15,6 +15,9 @@ body {
     margin-right: auto;
     position: relative;
 }
+.clear {
+    clear: both;
+}
 /*fonts*/
 @font-face {
     font-family: 'aleoregular';
@@ -134,7 +137,50 @@ body {
 /* Container sizes ----------------------------------------------------------*/
 
 /* Navbar -------------------------------------------------------------------*/
-
+nav {
+    border-bottom: 1px solid #cccccc;
+}
+nav ul li {
+    float: left;
+    list-style: none;
+    width: 74px;
+    text-align: center;
+}
+nav ul li a {
+    font-family: 'oswaldlight', sans-serif;
+    font-size: 16rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #999999;
+    text-decoration: none;
+    line-height: 35px;
+}
+nav ul li:hover a {
+    color: #ffffff;
+}
+nav ul li:hover {
+    background-color: #006699;
+}
+nav form input {
+    font-family: 'oswaldlight', sans-serif;
+    font-size: 16rem;
+    line-height: 35px;
+    color: #999999;
+}
+.search-wrapper {
+    float: right;
+    margin-right: 80px;
+    border-right: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    width: 250px;
+}
+.search-button {
+    background: url('../images/thumbnails/search.png') center center no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
 /* Tabs ---------------------------------------------------------------------*/
 .tabs li {
     list-style: none;
