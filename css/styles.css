@@ -127,7 +127,14 @@ body {
 /* Scaffolding --------------------------------------------------------------*/
 
 /* Typography ---------------------------------------------------------------*/
-
+.adv-topic {
+    text-transform: uppercase;
+    font-family: 'oswaldlight', sans-serif;
+    margin-top: 58rem;
+    text-align: center;
+    font-size: 40rem;
+    color: #333333;
+}
 /* Iconography --------------------------------------------------------------*/
 
 /* Buttons ------------------------------------------------------------------*/
@@ -177,9 +184,12 @@ nav form input {
 .search-button {
     background: url('../images/thumbnails/search.png') center center no-repeat;
     background-size: cover;
-    width: 15px;
-    height: 15px;
+    width: 15rem;
+    height: 15rem;
     cursor: pointer;
+    float: right;
+    margin-right: 15rem;
+    margin-top: 10rem;
 }
 /* Tabs ---------------------------------------------------------------------*/
 .tabs li {
@@ -215,9 +225,43 @@ nav form input {
     margin-top: 1px;
 }
 /* Thumbnails ---------------------------------------------------------------*/
-
+.adv-blocks {
+    width: 140px;
+    height: 110px;
+    font-family: 'aleoregular', sans-serif;
+    font-size: 36px;
+    display: inline-block;
+    position: relative;
+}
+.adv-blocks > p {
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 25px;
+}
+.jackets {
+    background: url(../images/thumbnails/jackets.png) center center no-repeat;
+    background-size: cover;
+}
+.suites {
+    background: url(../images/thumbnails/suits.png) center center no-repeat;
+    background-size: cover;
+}
+.jerseys {
+    background: url(../images/thumbnails/jerseys.png) center center no-repeat;
+    background-size: cover;
+}
+.shoes {
+    background: url(../images/thumbnails/shoes.png) center center no-repeat;
+    background-size: cover;
+}
 /* Carousel -----------------------------------------------------------------*/
 
+.carousel-wrapper {
+    height: 419rem;
+}
 /* Page Layout --------------------------------------------------------------*/
 header {
     height: 130px;
