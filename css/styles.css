@@ -100,17 +100,19 @@ body {
 
 .notification {
     position: absolute;
-    top: -30px;
-    right: 80px;
+    top: -30rem;
+    right: 30rem;
+}
+.notification a {
     line-height: 25rem;
     text-decoration: none;
 }
 .rectangle {
-    width: 220px;
-    height: 30px;
+    width: 220rem;
+    height: 30rem;
     background-color: #f52c66;
     color: #ffffff;
-    font-family: 'Aleo', sans-serif;
+    font-family: 'aleoregular', sans-serif;
     font-size: 16rem;
     text-align: center;
     margin: auto;
@@ -119,9 +121,9 @@ body {
 .triangle {
     width: 0;
     height: 0;
-    border-left: 110px solid transparent;
-    border-right: 110px solid transparent;
-    border-top: 25px solid #f52c66;
+    border-left: 110rem solid transparent;
+    border-right: 110rem solid transparent;
+    border-top: 25rem solid #f52c66;
 }
 
 /* Scaffolding --------------------------------------------------------------*/
@@ -166,20 +168,20 @@ nav ul li:hover a {
     color: #ffffff;
 }
 nav ul li:hover {
-    background-color: #006699;
+    background-color: #167c9a; /*done*/
 }
-nav form input {
+.search-wrapper input {
     font-family: 'oswaldlight', sans-serif;
     font-size: 16rem;
     line-height: 35px;
     color: #999999;
+    padding-left: 20px;
 }
 .search-wrapper {
     float: right;
-    margin-right: 80px;
     border-right: 1px solid #cccccc;
     border-left: 1px solid #cccccc;
-    width: 250px;
+    width: 270px;
 }
 .search-button {
     background: url('../images/thumbnails/search.png') center center no-repeat;
@@ -257,6 +259,38 @@ nav form input {
     background: url(../images/thumbnails/shoes.png) center center no-repeat;
     background-size: cover;
 }
+.boot1-pic {
+    background: url(../images/thumbnails/boots1.png) center center no-repeat;
+    background-size: cover;
+}
+.boot2-pic {
+    background: url(../images/thumbnails/boots2.png) center center no-repeat;
+    background-size: cover;
+}
+.boot3-pic {
+    background: url(../images/thumbnails/boots3.png) center center no-repeat;
+    background-size: cover;
+}
+.boot4-pic {
+    background: url(../images/thumbnails/boots4.png) center center no-repeat;
+    background-size: cover;
+}
+.boot5-pic {
+    background: url(../images/thumbnails/boots5.png) center center no-repeat;
+    background-size: cover;
+}
+.boot6-pic {
+    background: url(../images/thumbnails/boots6.png) center center no-repeat;
+    background-size: cover;
+}
+.boot7-pic {
+    background: url(../images/thumbnails/boots7.png) center center no-repeat;
+    background-size: cover;
+}
+.boot8-pic {
+    background: url(../images/thumbnails/boots1.png) center center no-repeat;
+    background-size: cover;
+}
 /* Carousel -----------------------------------------------------------------*/
 
 .carousel-wrapper {
@@ -291,10 +325,11 @@ header {
     line-height: 17px;
 }
 .logo {
-    height: 99px;
+    position: absolute;
+    top: 20rem;
+    right: 50%;
+    margin-right: -95rem;
     text-align: center;
-    background: #fff url('../images/thumbnails/logofull.png') center center no-repeat;
-    border-bottom: 1px solid #cccccc;
 }
 .MyAccount {
     position: absolute;
@@ -327,24 +362,101 @@ header {
 .MyAccount > span {
     display: inline-block;
 }
+.goods-block {
+    margin: 28px auto 0 auto;
+    padding: 0;
+    position: relative;
+}
+.price-tag {
+    background-color: #999999;
+    text-align: center;
+}
+.price-name {
+    font-family: 'oswald_regularregular', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 23px;
+    color: #666666;
+}
+.smallLine {
+    width: 100px;
+    height: 1px;
+    background-color: #666666;
+    margin: 12px auto 0 auto;
+}
+.price {
+    font-family: 'oswaldbold', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 11px;
+}
+.add-to-cart {
+    background-color: #2fb789;
+    color: #ffffff;
+    text-align: center;
+    line-height: 45px;
+    font-family: 'Oswald-light', sans-serif;
+    font-size: 18px;
+    text-decoration: none !important;
+    display: block;
+}
+.add-to-cart:hover {
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+}
 /* Mobile View --------------------------------------------------------------*/
 @media (max-width: 767px) {
     .container {
         width: 320px;
     }
-
+    .goods-block {
+        height: 308px;
+        width: 140px;
+    }
+    .goods-pic {
+        width: 140px;
+        height: 140px;
+    }
+    .price-tag {
+        height: 123px;
+        width: 140px;
+    }
+    .add-to-cart {
+        height: 45px;
+        width: 140px;
+    }
 }
 /* Tablet View --------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 999px) {
     .container {
         width: 768px;
+        padding-right: 30rem;
+        padding-left: 30rem;
     }
 
 }
 /* Desktop View -------------------------------------------------------------*/
 @media (min-width: 1000px) {
     .container {
-        width: 1100px;
+        width: 940rem;
+        padding-right: 30rem;
+        padding-left: 30rem;
     }
-
+    .goods-block {
+        height: 360px;
+        width: 220px;
+    }
+    .goods-pic {
+        width: 220px;
+        height: 220px;
+    }
+    .price-tag {
+        height: 93px;
+        width: 220px;
+    }
+    .add-to-cart {
+        height: 45px;
+        width: 220px;
+    }
 }
