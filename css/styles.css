@@ -536,6 +536,74 @@ header {
     text-transform: uppercase;
     text-decoration: none;
 }
+.twitter {
+    background-color: #f6f6f6;
+    overflow: hidden;
+    text-align: center;
+}
+.twitter:after {
+    width: 100%;
+    content: "";
+    display: inline-block;
+}
+.twitter-topic {
+    text-align: center;
+    font-family: 'oswald_regularregular', sans-serif;
+    font-size: 24px;
+    margin-top: 55px;
+}
+.grey {
+    color: #999999;
+}
+.twitter-link {
+    color: #3399cc;
+    text-decoration: none;
+}
+.twitter-text {
+    width: 940px;
+    color: #999999;
+    text-align: center;
+    margin-top: 32px;
+    padding-bottom: 43px;
+    font-family: 'oswaldlight', sans-serif;
+    font-size: 22px;
+    display: inline-block;
+}
+.map {
+    background: url('../images/thumbnails/world.png') center top no-repeat;
+    height: 600px;
+    width: 100%;
+}
+.locator {
+    background-color: rgba(18, 204, 226, 0.6);
+    font-family: 'oswaldlight', sans-serif;
+    font-size: 48rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 170rem;
+    color: #ffffff;
+    height: 170rem;
+    overflow: hidden;
+}
+.zip-address-wrapper {
+    text-align: center;
+    margin-top: 60rem;
+    position: relative;
+}
+.location-icon {
+    height: 25rem;
+    width: 18rem;
+    background: url('../images/icons/icons.png') no-repeat -249px 0;
+    position: absolute;
+}
+.zip-address {
+    border-radius: 0;
+    padding-left: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'oswaldlight', sans-serif;
+    height: 56px;
+}
 /* Mobile View --------------------------------------------------------------*/
 @media (max-width: 767px) {
     .container {
@@ -606,7 +674,6 @@ header {
         width: 180px;
         height: 290px;
     }
-
 }
 /* Desktop View -------------------------------------------------------------*/
 @media (min-width: 1000px) {
@@ -670,5 +737,12 @@ header {
     }
     .social-line {
         display: none;
+    }
+    .zip-address {
+        width: 640rem;
+    }
+    .location-icon {
+        left: 350rem;
+        top: 16rem;
     }
 }
