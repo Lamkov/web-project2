@@ -40,11 +40,15 @@
                 </select>
             </div>
         </div>
-        <div class="MyAccount">
-            <a href="#" class="account">My account</a> <span class="PCOnly"><a href="#">Saved items</a></span>
-            <a href="#" class="cart">Cart</a>
-            <span class="cartQuantity">(<span id="counting">0</span>)</span>
-            <div class="TotalSum">$<span id="TotalSum">0.00</span></div>
+        <div class="account-wrapper">
+            <ul class="account-info">
+                <li class="account"><a href="#">My account</a></li>
+                <li class="PC-only"><a href="#">Saved items</a></li>
+                <li class="cart"><a href="#">Cart</a></li>
+                <li class="cart-quantity">0</li>
+                <li>$</li>
+                <li class="total-sum">0.00</li>
+            </ul>
         </div>
     </div>
 </header>
@@ -277,7 +281,7 @@
         <label for="zipAddress"></label>
         <input type="text" class="zip-address" placeholder="ZIP-code or Address" id="ZipAddress">
     </div>
-        <div class="rangeFinder">
+        <div class="range-radius">
             <label for="range">radius:</label>
             <select class="range" id="range">
                 <option>40 Miles</option>
@@ -296,19 +300,21 @@
     </div>
 </section>
 <footer>
-    <div class="socialFeed">
+    <div class="container">
+        <div class="footer-wrapper">
+    <div class="footer-social-links">
         <p>unishop</p>
         <p>Your about us information<br/>would fit here nicely.</p>
         <div class="socialIcons">
             <div class="Line1Icons">
-                <a class="Icon" href="#"></a>
-                <a class="Icon" href="#"></a>
-                <a class="Icon" href="#"></a>
+                <a class="icon-link" href="#"></a>
+                <a class="icon-link" href="#"></a>
+                <a class="icon-link" href="#"></a>
             </div>
             <div class="Line2Icons">
-                <a class="Icon" href="#"></a>
-                <a class="Icon" href="#"></a>
-                <a class="Icon" href="#"></a>
+                <a class="icon-link" href="#"></a>
+                <a class="icon-link" href="#"></a>
+                <a class="icon-link" href="#"></a>
             </div>
             <a class="Icon" href="#"></a>
         </div>
@@ -333,7 +339,7 @@
             in blandit. Curabitur vulputate, ligula lacinia scelerisque
         </p>
     </div>
-    <div class="lastForms">
+    <div class="subscription-forms">
         <h4>newslatter</h4>
         <div class="subscription">
                 <form class="form-horizontal">
@@ -341,11 +347,13 @@
                     <input type="email" class="form-control" id="email" placeholder="Putt your E-Mail">
                 </form>
                 <label for="gender"></label>
-                <select class="form-control" id="gender">
+                <select id="gender">
                     <option>Women's</option>
                     <option>Men's</option>
                 </select>
             <button type="button" class="btn">Subscribe</button>
+        </div>
+    </div>
         </div>
     </div>
 </footer>

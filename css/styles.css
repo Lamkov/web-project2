@@ -193,6 +193,19 @@ nav ul li:hover {
     margin-right: 15rem;
     margin-top: 10rem;
 }
+.search-radius-button-wrapper {
+    text-align: center;
+}
+.search-radius-button {
+    font-family: 'oswald_regularregular', sans-serif;
+    font-size: 30px;
+    height: 68px;
+    width: 246px;
+    border-radius: 0;
+    background-color: #006699;
+    color: #ffffff;
+
+}
 /* Tabs ---------------------------------------------------------------------*/
 .tabs li {
     list-style: none;
@@ -354,7 +367,7 @@ header {
     margin-right: -95rem;
     text-align: center;
 }
-.MyAccount {
+.account-wrapper {
     position: absolute;
     right: 80px;
     top: 60px;
@@ -362,28 +375,30 @@ header {
     font-size: 16rem;
     font-weight: bold;
 }
+.account-info li {
+    display: inline-block;
+    list-style: none;
+}
+.account-info li a {
+    text-decoration: none;
+    color: #999999;
+}
+.account-info li a:hover {
+    color: #000000;
+}
 .account:after{
     content: " | ";
     color: #999999;
 }
-.PCOnly:after {
+.PC-only:after {
     content: " | ";
     color: #999999;
 }
-.MyAccount a, .MyAccount a span {
-    color: #999999;
-    text-decoration: none;
-}
-.cartQuantity {
+.cart-quantity a {
     color: #000000;
 }
-.TotalSum {
+.total-sum a {
     color: #999999;
-}
-.MyAccount > a,
-.MyAccount > div,
-.MyAccount > span {
-    display: inline-block;
 }
 .adv-wrapper {
     margin: 30px auto 0 auto;
@@ -603,6 +618,112 @@ header {
     font-size: 30px;
     font-family: 'oswaldlight', sans-serif;
     height: 56px;
+}
+.range-radius {
+    margin-top:55rem;
+    display: block;
+    text-align: center;
+}
+.range {
+    width: 160px;
+    height: 60px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    padding: 0;
+}
+.range-radius label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #b8b8b8;
+}
+footer {
+    border-top: 2px solid #d7d7d7;
+}
+.footer-wrapper {
+    width: 100%;
+    text-align: justify;
+    margin-top: 49rem;
+}
+.footer-wrapper:after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+}
+.footer-social-links,
+.BlEnd,
+.linksEnd,
+.subscription-forms {
+    width: 220px;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-social-links p:first-child {
+    font-family: 'Aleo', sans-serif;
+    font-size: 30px;
+    color: #434343;
+    text-transform: uppercase;
+}
+.footer-social-links p:nth-child(2) {
+    font-family: 'Aleo', sans-serif;
+    font-size: 16px;
+    color: #999999;
+}
+.Icon {
+    height: 34px;
+    width: 34px;
+    margin: 10px 12px 0 0;
+    float: left;
+}
+.socialIcons {
+    margin: 28px 0 0 0;
+}
+.linksMain {
+    list-style: none;
+    padding: 0;
+}
+.linksMain li {
+    margin-top: 15px;
+}
+.linksMain a {
+    text-decoration: none;
+    color: #666666;
+    font-family: 'Oswald-Light', sans-serif;
+    font-size: 18px;
+}
+.linksEnd h4,
+.BlEnd h4,
+.subscription-forms h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.ghostHead {
+    font-family: 'Oswald-Light', sans-serif;
+    font-size: 18px;
+    color: #333333;
+}
+.ghostly {
+    font-family: 'Oswald-Light', sans-serif;
+    font-size: 18px;
+    color: #999999;
+}
+.subscription button {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #006699;
+    border-radius: 0;
+    width: 130px;
+}
+#gender {
+    width: 140px;
+}
+.subscription select {
+    border-radius: 0;
 }
 /* Mobile View --------------------------------------------------------------*/
 @media (max-width: 767px) {
