@@ -306,6 +306,27 @@ nav ul li:hover {
     width: 105rem;
     background: url('../images/icons/icons.png') no-repeat -212rem -36rem;
 }
+.icon-instagram {
+    background: url('../images/icons/icons.png') no-repeat 0 0;
+}
+.icon-twitter {
+    background: url('../images/icons/icons.png') no-repeat -35rem 0;
+}
+.icon-tube {
+    background: url('../images/icons/icons.png') no-repeat -70rem 0;
+}
+.icon-vibe {
+    background: url('../images/icons/icons.png') no-repeat -105rem 0;
+}
+.icon-cloud {
+    background: url('../images/icons/icons.png') no-repeat -142rem 0;
+}
+.icon-google {
+    background: url('../images/icons/icons.png') no-repeat -177rem 0;
+}
+.icon-b {
+    background: url('../images/icons/icons.png') no-repeat -213rem 0;
+}
 /* Carousel -----------------------------------------------------------------*/
 
 .carousel {
@@ -642,6 +663,7 @@ header {
 }
 footer {
     border-top: 2px solid #d7d7d7;
+    height: 355rem;
 }
 .footer-wrapper {
     width: 100%;
@@ -654,76 +676,93 @@ footer {
     display: inline-block;
 }
 .footer-social-links,
-.BlEnd,
-.linksEnd,
+.footer-general-links,
+.footer-blogs,
 .subscription-forms {
     width: 220px;
     display: inline-block;
     vertical-align: top;
 }
-.footer-social-links p:first-child {
-    font-family: 'Aleo', sans-serif;
-    font-size: 30px;
+.footer-social-links h1 {
+    font-family: 'aleoregular', sans-serif;
     color: #434343;
     text-transform: uppercase;
 }
-.footer-social-links p:nth-child(2) {
-    font-family: 'Aleo', sans-serif;
+.footer-social-links p {
+    font-family: 'aleoregular', sans-serif;
     font-size: 16px;
     color: #999999;
 }
-.Icon {
-    height: 34px;
-    width: 34px;
-    margin: 10px 12px 0 0;
-    float: left;
+.footer-social-links ul li {
+    list-style: none;
+    display: inline-block;
 }
-.socialIcons {
-    margin: 28px 0 0 0;
+.icon-link {
+    height: 35px;
+    width: 35px;
+    margin: 10px 14rem 0 0;
+    display: block;
 }
-.linksMain {
+.footer-general-links ul li {
+    margin-top: 15px;
     list-style: none;
     padding: 0;
 }
-.linksMain li {
-    margin-top: 15px;
-}
-.linksMain a {
+.footer-general-links ul li a {
     text-decoration: none;
     color: #666666;
-    font-family: 'Oswald-Light', sans-serif;
+    font-family: 'oswaldlight', sans-serif;
     font-size: 18px;
 }
-.linksEnd h4,
-.BlEnd h4,
-.subscription-forms h4 {
-    font-family: 'Oswald', sans-serif;
+.footer-general-links h1,
+.footer-blogs h1,
+.subscription-forms h1 {
+    font-family: 'oswald_regularregular', sans-serif;
     font-size: 18px;
     text-transform: uppercase;
+    margin-bottom: 38rem;
 }
-.ghostHead {
-    font-family: 'Oswald-Light', sans-serif;
+.footer-blogs h3 {
+    font-family: 'oswaldlight', sans-serif;
     font-size: 18px;
     color: #333333;
+    margin-top: 25rem;
 }
-.ghostly {
-    font-family: 'Oswald-Light', sans-serif;
+.footer-blogs p {
+    font-family: 'oswaldlight', sans-serif;
     font-size: 18px;
     color: #999999;
+    margin-top: 20rem;
 }
-.subscription button {
-    font-family: 'Oswald', sans-serif;
+.subscription input {
+    font-family: 'oswaldlight', sans-serif;
+    font-size: 16rem;
+    height: 36rem;
+    width: 100%;
+    background-color: #f6f6f6;
+    padding-left: 10rem;
+    border: 1rem solid #cccccc;
+    border-radius: 0;
+}
+#gender {
+    font-family: 'oswaldlight', sans-serif;
+    font-size: 16rem;
+    color: #999999;
+    margin-top: 15rem;
+    width: 140rem;
+    height: 36rem;
+    border: 1rem solid #cccccc;
+    border-radius: 0;
+}
+.subscription-button {
+    font-family: 'oswald_regularregular', sans-serif;
     font-size: 16px;
     color: #ffffff;
     background-color: #006699;
     border-radius: 0;
-    width: 130px;
-}
-#gender {
-    width: 140px;
-}
-.subscription select {
-    border-radius: 0;
+    width: 130rem;
+    height: 36rem;
+    margin-top: 25rem;
 }
 /* Mobile View --------------------------------------------------------------*/
 @media (max-width: 767px) {
