@@ -97,12 +97,6 @@ body {
     font-style: normal;
 }
 /*header*/
-
-.notification {
-    position: absolute;
-    top: -30rem;
-    right: 30rem;
-}
 .notification a {
     line-height: 25rem;
     text-decoration: none;
@@ -188,9 +182,6 @@ nav ul li a {
 nav ul li:hover a {
     color: #ffffff;
 }
-nav ul li:hover {
-    background-color: #167c9a; /*done*/
-}
 .search-wrapper input {
     font-family: 'oswaldlight', sans-serif;
     font-size: 16rem;
@@ -199,10 +190,10 @@ nav ul li:hover {
     padding-left: 20px;
 }
 .search-wrapper {
+    height: 35rem;
     float: right;
     border-right: 1px solid #cccccc;
     border-left: 1px solid #cccccc;
-    width: 270px;
 }
 .search-button {
     background: url('../images/thumbnails/search.png') center center no-repeat;
@@ -211,7 +202,7 @@ nav ul li:hover {
     height: 15rem;
     cursor: pointer;
     float: right;
-    margin-right: 15rem;
+    margin-right: 14rem;
     margin-top: 10rem;
 }
 .search-radius-button-wrapper {
@@ -415,8 +406,6 @@ header {
 }
 .account-wrapper {
     position: absolute;
-    right: 80px;
-    top: 60px;
     font-family: 'oswaldlight', sans-serif;
     font-size: 16rem;
     font-weight: bold;
@@ -493,10 +482,12 @@ header {
 .goods-main-block {
     text-align: justify;
 }
-.goods-main-block:last-child:after {
+.goods-main-block:after {
     content: "";
     display: inline-block;
     width: 100%;
+}
+.goods-main-block:last-child:after {
     margin-bottom: 80rem;
 }
 .goods-block {
@@ -637,7 +628,6 @@ header {
     text-decoration: none;
 }
 .twitter-text {
-    width: 940px;
     color: #999999;
     text-align: center;
     margin-top: 32px;
@@ -675,11 +665,11 @@ header {
 }
 .zip-address {
     border-radius: 0;
-    padding-left: 30px;
+    padding-left: 30rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 30rem;
     font-family: 'oswaldlight', sans-serif;
-    height: 56px;
+    height: 56rem;
 }
 .range-radius {
     margin-top:55rem;
@@ -716,14 +706,6 @@ footer {
     width: 100%;
     display: inline-block;
 }
-.footer-social-links,
-.footer-general-links,
-.footer-blogs,
-.subscription-forms {
-    width: 220px;
-    display: inline-block;
-    vertical-align: top;
-}
 .footer-social-links h1 {
     font-family: 'aleoregular', sans-serif;
     color: #434343;
@@ -737,12 +719,6 @@ footer {
 .footer-social-links ul li {
     list-style: none;
     display: inline-block;
-}
-.icon-link {
-    height: 35px;
-    width: 35px;
-    margin: 10px 14rem 0 0;
-    display: block;
 }
 .footer-general-links ul li {
     margin-top: 15px;
@@ -856,9 +832,60 @@ footer {
 /* Tablet View --------------------------------------------------------------*/
 @media (min-width: 768px) and (max-width: 999px) {
     .container {
-        width: 768px;
-        padding-right: 30rem;
-        padding-left: 30rem;
+        width: 620rem;
+        padding-right: 20rem;
+        padding-left: 20rem;
+    }
+    .notification {
+        position: absolute;
+        top: -30rem;
+        right: 20rem;
+    }
+    .account-wrapper {
+        right: 20px;
+        top: 60px;
+    }
+    .PC-only {
+        display: none !important;
+    }
+    nav ul li:hover {
+        background-color: #000000;
+    }
+    .search-wrapper {
+        width: 40px;
+    }
+    .search-input {
+        display: none;
+    }
+    .goods-block {
+        height: 308px;
+        width: 140px;
+        display: inline-block;
+    }
+    .goods-pic {
+        width: 140px;
+        height: 140px;
+    }
+    .price-tag {
+        height: 123px;
+        width: 140px;
+    }
+    .add-to-cart {
+        height: 45px;
+        width: 140px;
+    }
+    .discount {
+        color: #ff3366;
+    }
+    .sale {
+        top: 80px;
+        width: 140px;
+        height: 40px;
+    }
+    .new {
+        top: 80px;
+        width: 140px;
+        height: 40px;
     }
     .social-main-block {
         width: 100%;
@@ -871,9 +898,32 @@ footer {
         display: inline-block;
     }
     .social-block {
+        text-align: center;
         display: inline-block;
         width: 180px;
         height: 290px;
+    }
+    .zip-address {
+        width: 520rem;
+        border: 1rem solid #333333;
+    }
+    .location-icon {
+        left: 190rem;
+        top: 14rem;
+    }
+    .footer-social-links,
+    .footer-general-links,
+    .footer-blogs,
+    .subscription-forms {
+        width: 140px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .icon-link {
+        height: 35px;
+        width: 35px;
+        margin: 10rem 0 0 0;
+        display: block;
     }
 }
 /* Desktop View -------------------------------------------------------------*/
@@ -882,6 +932,21 @@ footer {
         width: 940rem;
         padding-right: 30rem;
         padding-left: 30rem;
+    }
+    .notification {
+        position: absolute;
+        top: -30rem;
+        right: 30rem;
+    }
+    .account-wrapper {
+        right: 80px;
+        top: 60px;
+    }
+    nav ul li:hover {
+        background-color: #167c9a;
+    }
+    .search-wrapper {
+        width: 270px;
     }
     .adv-blocks {
         width: 220px;
@@ -945,5 +1010,19 @@ footer {
     .location-icon {
         left: 350rem;
         top: 16rem;
+    }
+    .footer-social-links,
+    .footer-general-links,
+    .footer-blogs,
+    .subscription-forms {
+        width: 220px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .icon-link {
+        height: 35px;
+        width: 35px;
+        margin: 10px 14rem 0 0;
+        display: block;
     }
 }
