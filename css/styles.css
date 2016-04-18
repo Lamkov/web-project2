@@ -206,6 +206,7 @@ nav ul li:hover a {
     margin-top: 10rem;
 }
 .search-radius-button-wrapper {
+    margin-top: 55rem;
     text-align: center;
 }
 .search-radius-button {
@@ -784,7 +785,15 @@ footer {
 /* Mobile View --------------------------------------------------------------*/
 @media (max-width: 767px) {
     .container {
-        width: 320px;
+        width: 320rem;
+        padding-right: 20rem;
+        padding-left: 20rem;
+    }
+    .notification {
+        display: none !important;
+    }
+    .account-wrapper {
+        display: none;
     }
     .adv-blocks {
         width: 140px;
