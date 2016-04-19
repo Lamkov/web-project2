@@ -790,10 +790,35 @@ footer {
         padding-left: 20rem;
     }
     .notification {
-        display: none !important;
+        display: none;
     }
     .account-wrapper {
         display: none;
+    }
+    .currency {
+        display: none;
+    }
+    .search-input {
+        display: none;
+    }
+    nav ul li {
+        display: none;
+    }
+    .mobile-button {
+        height: 35rem;
+        width: 45rem;
+        border-left: 1rem solid #cccccc;
+        border-right: 1rem solid #cccccc;
+        float: left;
+    }
+    .mobile-button:hover nav ul li {
+        display: block;
+    }
+    .mobile-button-image {
+        background: url('../images/icons/icons.png') -267rem 0 no-repeat;
+        height: 15rem;
+        width: 25rem;
+        margin: 10rem auto 0 auto;
     }
     .adv-blocks {
         width: 140px;
@@ -844,6 +869,9 @@ footer {
         width: 620rem;
         padding-right: 20rem;
         padding-left: 20rem;
+    }
+    .mobile-button {
+        display: none;
     }
     .notification {
         position: absolute;
@@ -941,6 +969,9 @@ footer {
         width: 940rem;
         padding-right: 30rem;
         padding-left: 30rem;
+    }
+    .mobile-button {
+        display: none;
     }
     .notification {
         position: absolute;
