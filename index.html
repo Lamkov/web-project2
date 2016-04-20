@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>UNISHOP</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 <header>
     <div class="tab-group">
         <div class="container">
-        <ul class="tabs">
-            <li class="active">unishop</li>
-            <li>twister</li>
-            <li>RockStar's</li>
-        </ul>
+            <ul class="tabs">
+                <li class="active"><span>UNISHOP</span></li>
+                <li><a href="#">TWISTER</a></li>
+                <li><a href="#">RockStar's</a></li>
+            </ul>
+						<div class="clear"></div>
+						<div class="notification">
+								<a href="#">
+										<span>Super New Stuff is here!!</span><br/>
+										<span>&#x2605;</span>
+								</a>
+						</div>
         </div>
     </div>
     <div class="container">
-    <div class="notification">
-    <a href="#">
-        <div class="rectangle">
-            <span>Super New Stuff is here!!</span><br/>
-            <span>&#x2605;</span>
-        </div>
-        <div class="triangle">
-        </div>
-    </a>
-    </div>
         <div class="logo"><a href="#"><img src="images/thumbnails/logofull.png"/></a></div>
         <div class="currency">
             <div class="flag"></div>
+						<!--TODO: remove select and label; replace these with dives-->
             <div>
                 <label for="currency"></label>
                 <select id="currency">
@@ -41,16 +39,15 @@
                 </select>
             </div>
         </div>
-        <div class="account-wrapper">
-            <ul class="account-info">
-                <li class="account"><a href="#">My account</a></li>
-                <li class="PC-only"><a href="#">Saved items</a></li>
-                <li class="cart"><a href="#">Cart</a></li>
-                <li class="cart-quantity">0</li>
-                <li>$</li>
-                <li class="total-sum">0.00</li>
-            </ul>
-        </div>
+				<ul class="account-info">
+						<li class="account"><a href="#">My account</a></li>
+						<li class="desktop-visible"><a href="#">Saved items</a></li>
+						<li class="cart">
+							<a href="#">Cart</a>
+							<span class="cart-quantity">0</span>
+							<span class="total-sum">$0.00</span>
+						</li>
+				</ul>
     </div>
 </header>
 <nav>
@@ -68,8 +65,8 @@
         </ul>
         <div class="search-wrapper">
             <form id="newsearch">
-                <label for="search"></label>
-                <input type="text" id="search" class="search-input" size="35" maxlength="30" value="Search please"><button type="submit" class="search-button"></button>
+                <input type="text" id="search" class="search-input" placeholder="Search please">
+								<button type="submit" class="search-button"></button>
             </form>
         </div>
         <div class="clear"></div>
@@ -282,7 +279,6 @@
     <div class="container">
     <div class="zip-address-wrapper">
         <span class="location-icon"></span>
-        <label for="zipAddress"></label>
         <input type="text" class="zip-address" placeholder="ZIP-code or Address" id="ZipAddress">
     </div>
         <div class="range-radius">
