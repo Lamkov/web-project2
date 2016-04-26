@@ -188,9 +188,8 @@ nav ul li a {
     color: #999999;
     display: block;
     font-family: 'oswaldlight', sans-serif;
-    font-size: 16rem;
+    font-size: 18rem;
     font-weight: bold;
-    text-transform: uppercase;
     text-decoration: none;
     line-height: 35rem;
 }
@@ -449,9 +448,13 @@ header {
     display: inline-block;
     list-style: none;
 }
+.account-info li:nth-child(2) {
+    margin-left: 7rem;
+}
 .account-info li:not(:last-child):after{
     content: " | ";
     color: #999999;
+    margin-left: 6rem;
 }
 .account-info li a {
     text-decoration: none;
@@ -460,15 +463,17 @@ header {
 .account-info li a:hover {
     color: #000000;
 }
-
-
-
-
-.cart-quantity a {
-    color: #000000;
+.cart {
+    font-size: 24rem;
+    margin-left: 7rem;
 }
-.total-sum a {
+.cart-quantity {
+    color: #000000;
+    font-size: 24rem;
+}
+.total-sum {
     color: #999999;
+    font-size: 24rem;
 }
 .adv-wrapper {
     margin: 55rem auto 0 auto;
@@ -1007,16 +1012,13 @@ footer {
     }
     .account-info {
         right: 30rem;
-        top: 45rem;
+        top: 40rem;
     }
     nav ul li:hover {
         background-color: #167c9a;
     }
     .search-wrapper {
-        width: 270rem;
-    }
-    .search-wrapper input {
-        width: 233rem;
+        width: 247rem;
     }
     .adv-blocks {
         width: 220rem;
