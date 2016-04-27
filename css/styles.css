@@ -136,7 +136,7 @@ body {
     color: #333333;
     font-family: 'oswaldlight', sans-serif;
     font-size: 40rem;
-    margin-top: 52rem;
+    margin-top: 45rem;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -147,9 +147,9 @@ body {
     display: block;
     z-index: -1;
     left:0;
-    top: 55rem;
+    top: 69rem;
     width:100%;
-    border-bottom: 3rem solid #333333;
+    border-bottom: 2rem solid #333333;
 }
 .adv-topic:before {
     content:"";
@@ -157,7 +157,7 @@ body {
     display: block;
     z-index: -1;
     left:0;
-    top: 60rem;
+    top: 74rem;
     width:100%;
     border-bottom: 1rem solid #333333;
 }
@@ -209,10 +209,10 @@ nav ul li:hover a {
     float: left;
     line-height: 35rem;
     color: #999999;
-    padding-left: 20rem;
+    padding-left: 12rem;
 }
 .search-button {
-    background: url('../images/thumbnails/search.png') center center no-repeat;
+    background: url('../images/thumbnails/search.png') 10rem 13rem no-repeat;
     width: 35rem;
     height: 35rem;
     cursor: pointer;
@@ -275,27 +275,21 @@ nav ul li:hover a {
 /* Thumbnails ---------------------------------------------------------------*/
 .jackets {
     background: url(../images/thumbnails/jackets.png) center center no-repeat;
-    background-size: cover;
 }
 .suites {
-    background: url(../images/thumbnails/suits.png) center center no-repeat;
-    background-size: cover;
+    background: url(../images/thumbnails/suits.png) center bottom no-repeat;
 }
 .jerseys {
     background: url(../images/thumbnails/jerseys.png) center center no-repeat;
-    background-size: cover;
 }
 .shoes {
     background: url(../images/thumbnails/shoes.png) center center no-repeat;
-    background-size: cover;
 }
 .boot1-pic {
     background: url(../images/thumbnails/boots1.png) center center no-repeat;
-    background-size: cover;
 }
 .boot2-pic {
     background: url(../images/thumbnails/boots2.png) center center no-repeat;
-    background-size: cover;
 }
 .boot3-pic {
     background: url(../images/thumbnails/boots3.png) center center no-repeat;
@@ -476,7 +470,7 @@ header {
     font-size: 24rem;
 }
 .adv-wrapper {
-    margin: 55rem auto 0 auto;
+    margin: 42rem auto 0 auto;
     text-align: justify;
 }
 .adv-wrapper:after {
@@ -501,20 +495,21 @@ header {
     line-height: 25rem;
 }
 .adv-text {
-    margin: 50rem auto 30rem auto;
     text-align: center;
 }
 .adv-text > h2 {
     font-family: 'oswaldlight', sans-serif;
     font-size: 30rem;
+    font-weight: normal;
     color: #333333;
-    margin: 60rem auto 0 auto;
+    margin: 35rem auto 0 auto;
 }
 .adv-text > p {
     font-family: 'aleoregular', sans-serif;
     font-size: 18rem;
     color: #999999;
-    margin: 45rem 0 80rem 0;
+    margin: 28rem 70rem 72rem 70rem;
+    line-height: 30rem;
 }
 .goods {
     background-color: #f6f6f6;
@@ -531,7 +526,7 @@ header {
     margin-bottom: 80rem;
 }
 .goods-block {
-    margin: 28rem auto 0 auto;
+    margin: 20rem auto 0 auto;
     padding: 0;
     position: relative;
 }
@@ -541,8 +536,9 @@ header {
 .goods-topic {
     font-family: 'oswaldlight', sans-serif;
     color: #434343;
-    font-size: 40rem;
-    margin: 50rem auto 0 auto;
+    font-size: 50rem;
+    font-weight: lighter;
+    margin: 46rem auto 0 auto;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -550,14 +546,14 @@ header {
     color: #999999;
     font-family: 'aleoregular', sans-serif;
     font-size: 18rem;
-    margin-top: 16rem;
+    margin-top: 5rem;
     text-align: center;
 }
 .goods-subtopic > p {
     text-align: center;
 }
 .price-tag {
-    background-color: #999999;
+    background-color: #cccccc;
     text-align: center;
 }
 .price-name {
@@ -584,7 +580,7 @@ header {
     color: #ffffff;
     text-align: center;
     line-height: 45rem;
-    font-family: 'Oswald-light', sans-serif;
+    font-family: 'oswaldlight', sans-serif;
     font-size: 18rem;
     text-decoration: none !important;
     display: block;
@@ -597,13 +593,23 @@ header {
 .discount {
     color: #ff3366;
 }
+.adv-picture-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
+    font-family: 'aleoregular', sans-serif;
+    font-size: 14rem;
+    line-height: 20rem;
+    text-align: left;
+    padding: 10rem 25rem 0 13rem;
+}
 .sale {
     position: absolute;
-    background-color: rgba(204, 51, 102, 0.8);
+    background-color: rgba(218, 57, 103, 0.8);
     color: #ffffff;
-    line-height: 40rem;
+    line-height: 45rem;
     font-family: 'oswald_regularregular', sans-serif;
-    font-size: 18rem;
+    font-size: 20rem;
     text-transform: uppercase;
     text-align: center;
 }
@@ -1043,6 +1049,11 @@ footer {
     }
     .discount {
         color: #ff3366;
+    }
+    .adv-picture-text {
+        top: 100rem;
+        width: 220rem;
+        height: 120rem;
     }
     .sale {
         top: 160rem;
