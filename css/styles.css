@@ -111,6 +111,8 @@ body {
     display: block;
     font-family: 'aleoregular', sans-serif;
     font-size: 16rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
     line-height: 25rem;
     width: 220rem;
     height: 30rem;
@@ -185,11 +187,10 @@ nav ul li {
     text-align: center;
 }
 nav ul li a {
-    color: #999999;
+    color: #000000;
     display: block;
     font-family: 'oswaldlight', sans-serif;
     font-size: 18rem;
-    font-weight: bold;
     text-decoration: none;
     line-height: 35rem;
 }
@@ -325,13 +326,13 @@ nav ul li:hover a {
     margin: 0 auto;
     height: 105rem;
     width: 105rem;
-    background: url('../images/icons/icons.png') no-repeat -105rem -36rem;
+    background: url('../images/icons/icons.png') no-repeat -212rem -36rem;
 }
 .social-image-3 {
     margin: 0 auto;
     height: 105rem;
     width: 105rem;
-    background: url('../images/icons/icons.png') no-repeat -212rem -36rem;
+    background: url('../images/icons/icons.png') no-repeat -106rem -36rem;
 }
 .icon-instagram {
     background: url('../images/icons/icons.png') no-repeat 0 0;
@@ -515,6 +516,7 @@ header {
     background-color: #f6f6f6;
 }
 .goods-main-block {
+    margin: 20rem auto 0 auto;
     text-align: justify;
 }
 .goods-main-block:after {
@@ -522,11 +524,13 @@ header {
     display: inline-block;
     width: 100%;
 }
+.goods-main-block:last-child {
+    margin-top:27rem;
+}
 .goods-main-block:last-child:after {
-    margin-bottom: 80rem;
+    margin-bottom: 71rem;
 }
 .goods-block {
-    margin: 20rem auto 0 auto;
     padding: 0;
     position: relative;
 }
@@ -538,19 +542,19 @@ header {
     color: #434343;
     font-size: 50rem;
     font-weight: lighter;
-    margin: 46rem auto 0 auto;
     display: inline-block;
     text-transform: uppercase;
+    margin-top: 50rem;
+}
+.goods-topic:first-child {
+    margin-top: 46rem;
 }
 .goods-subtopic {
     color: #999999;
     font-family: 'aleoregular', sans-serif;
     font-size: 18rem;
-    margin-top: 5rem;
     text-align: center;
-}
-.goods-subtopic > p {
-    text-align: center;
+    margin-top: 7rem;
 }
 .price-tag {
     background-color: #cccccc;
@@ -559,21 +563,23 @@ header {
 .price-name {
     font-family: 'oswald_regularregular', sans-serif;
     font-size: 16rem;
+    font-weight: bold;
+    letter-spacing: -0.3rem;
     text-transform: uppercase;
-    padding-top: 23rem;
+    padding-top: 20rem;
     color: #666666;
 }
 .smallLine {
     width: 100rem;
     height: 1rem;
-    background-color: #666666;
-    margin: 12rem auto 0 auto;
+    background-color: #bbbbbb;
+    margin: 7rem auto 0 auto;
 }
 .price {
     font-family: 'oswaldbold', sans-serif;
     color: #ffffff;
     font-size: 18rem;
-    margin-top: 11rem;
+    margin-top: 10rem;
 }
 .add-to-cart {
     background-color: #2fb789;
@@ -629,23 +635,24 @@ header {
 .social-topic {
     text-align: center;
     font-family: 'oswaldlight', sans-serif;
-    font-size: 24rem;
+    font-size: 30rem;
     text-transform: uppercase;
-    margin-top: 30rem;
+    margin-top: 33rem;
     color: #434343;
 }
 .social-text {
     text-align: center;
     font-family: 'aleoregular', sans-serif;
-    font-size: 16rem;
-    margin-top: 25rem;
+    font-size: 17rem;
+    margin-top: 13rem;
+    line-height: 20rem;
     color: #a9a9a9;
 }
 .social-link {
     display: block;
     font-family: 'oswald_regularregular', sans-serif;
-    font-size: 16rem;
-    margin-top: 25rem;
+    font-size: 17rem;
+    margin-top: 28rem;
     color: #555555;
     text-transform: uppercase;
     text-decoration: none;
@@ -663,8 +670,9 @@ header {
 .twitter-topic {
     text-align: center;
     font-family: 'oswald_regularregular', sans-serif;
-    font-size: 24rem;
-    margin-top: 55rem;
+    font-size: 25rem;
+    letter-spacing: 0.3rem;
+    margin-top: 53rem;
 }
 .grey {
     color: #999999;
@@ -676,10 +684,11 @@ header {
 .twitter-text {
     color: #999999;
     text-align: center;
-    margin-top: 32rem;
-    padding-bottom: 43rem;
+    margin: 22rem auto 31rem auto;
+    line-height: 35rem;
     font-family: 'oswaldlight', sans-serif;
-    font-size: 22rem;
+    font-size: 23rem;
+    letter-spacing: -0.1rem;
     display: inline-block;
 }
 .map {
@@ -690,17 +699,18 @@ header {
 .locator {
     background-color: rgba(18, 204, 226, 0.6);
     font-family: 'oswaldlight', sans-serif;
-    font-size: 48rem;
+    font-size: 51rem;
+    letter-spacing: -0.6rem;
     text-align: center;
     text-transform: uppercase;
-    line-height: 170rem;
+    line-height: 200rem;
     color: #ffffff;
-    height: 170rem;
+    height: 172rem;
     overflow: hidden;
 }
 .zip-address-wrapper {
     text-align: center;
-    margin-top: 60rem;
+    margin-top: 63rem;
     position: relative;
 }
 .location-icon {
@@ -711,6 +721,8 @@ header {
 }
 .zip-address {
     border-radius: 0;
+    border: 1rem solid #cccccc;
+    color: #333333;
     padding-left: 30rem;
     text-align: center;
     font-size: 30rem;
@@ -969,7 +981,6 @@ footer {
     }
     .social-main-block {
         width: 100%;
-        margin: 80rem auto 0 auto;
         text-align: justify;
     }
     .social-main-block:after {
@@ -981,7 +992,6 @@ footer {
         text-align: center;
         display: inline-block;
         width: 180rem;
-        height: 290rem;
     }
     .zip-address {
         width: 520rem;
@@ -1069,8 +1079,8 @@ footer {
         background-position: center;
     }
     .social-main-block {
-        width: 100%;
-        margin: 80rem auto 0 auto;
+        width: 880rem;
+        margin: 59rem auto 44rem auto;
         text-align: justify;
     }
     .social-main-block:after {
@@ -1082,7 +1092,6 @@ footer {
         text-align: center;
         display: inline-block;
         width: 240rem;
-        height: 290rem;
     }
     .social-line {
         display: none;
