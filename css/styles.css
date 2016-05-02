@@ -361,6 +361,25 @@ nav ul li:hover a {
     height: 420rem;
     background-size: cover;
 }
+.carousel-wrapper {
+    position: relative;
+}
+.prev {
+    position: absolute;
+    top: 200rem;
+    left: -60rem;
+    height: 69rem;
+    width: 32rem;
+    background: url('../images/icons/icons.png') -320rem 0 no-repeat;
+}
+.next {
+    position: absolute;
+    top: 200rem;
+    right: -60rem;
+    height: 69rem;
+    width: 32rem;
+    background: url('../images/icons/icons.png') -320rem -71rem no-repeat;
+}
 .content {
     list-style: none;
 }
