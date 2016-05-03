@@ -363,6 +363,7 @@ nav ul li:hover a {
 }
 .carousel-wrapper {
     position: relative;
+    width: 940rem;
 }
 .prev {
     position: absolute;
@@ -371,6 +372,7 @@ nav ul li:hover a {
     height: 69rem;
     width: 32rem;
     background: url('../images/icons/icons.png') -320rem 0 no-repeat;
+    cursor:pointer;
 }
 .next {
     position: absolute;
@@ -379,14 +381,18 @@ nav ul li:hover a {
     height: 69rem;
     width: 32rem;
     background: url('../images/icons/icons.png') -320rem -71rem no-repeat;
+    cursor:pointer;
 }
 .content {
     list-style: none;
 }
-.carousel-element {
+.content li {
     display: none;
 }
-.active {
+.content li div {
+    color: #ffffff;
+}
+.content li:first-child {
     display: block;
 }
 .carousel:after {
