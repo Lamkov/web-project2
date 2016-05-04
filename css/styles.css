@@ -364,6 +364,8 @@ nav ul li:hover a {
 .carousel-wrapper {
     position: relative;
     width: 940rem;
+    height: 420rem;
+    overflow: hidden;
 }
 .prev {
     position: absolute;

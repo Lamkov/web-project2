@@ -12,13 +12,13 @@ $(document).ready(function(){
     $('.next').click(function () {
         images[currentItem].hide();
         currentItem = (currentItem + 1) % count;
-        images[currentItem].show();
+        images[currentItem].fadeIn(1000);
     });
 
     $('.prev').click(function () {
         images[currentItem].hide();
         if (currentItem > 0) currentItem--;
         else currentItem = count - 1;
-        images[currentItem].show();
+        images[currentItem].fadeIn(1000);
     });
 });
