@@ -348,6 +348,9 @@ nav ul li:hover a {
     background: url('../images/icons/icons.png') no-repeat -213rem 0;
 }
 /* Carousel -----------------------------------------------------------------*/
+.carousel {
+    background-color: #000000;
+}
 .carousel-image-1 {
     background: url(../images/thumbnails/carousel-image.png) no-repeat;
 }
@@ -361,19 +364,15 @@ nav ul li:hover a {
     height: 420rem;
     background-size: cover;
 }
-.carousel-wrapper {
-    position: relative;
-    width: 940rem;
-    height: 420rem;
-    overflow: hidden;
-}
+
 .prev {
     position: absolute;
     top: 200rem;
     left: -60rem;
     height: 69rem;
     width: 32rem;
-    background: url('../images/icons/icons.png') -320rem 0 no-repeat;
+    background: url('../images/arrow-left.png') center no-repeat;
+    background-size: contain;
     cursor:pointer;
 }
 .next {
@@ -382,7 +381,8 @@ nav ul li:hover a {
     right: -60rem;
     height: 69rem;
     width: 32rem;
-    background: url('../images/icons/icons.png') -320rem -71rem no-repeat;
+    background: url('../images/arrow-right.png') center no-repeat;
+    background-size: contain;
     cursor:pointer;
 }
 .content {
@@ -397,13 +397,7 @@ nav ul li:hover a {
 .content li:first-child {
     display: block;
 }
-.carousel:after {
-    content: "";
-    display: block;
-    clear: both;
-    height: 0;
-    visibility: hidden;
-}
+
 /* Page Layout --------------------------------------------------------------*/
 header {
     height: 130rem;
@@ -712,8 +706,6 @@ header {
 }
 .map {
     background: url('../images/thumbnails/world.png') center top no-repeat;
-    height: 594rem;
-    width: 100%;
 }
 .locator {
     background-color: rgba(18, 204, 226, 0.6);
@@ -1015,6 +1007,16 @@ footer {
     .search-input {
         display: none;
     }
+    .carousel-image-1, .carousel-image-2, .carousel-image-3 {
+        height: 400rem;
+        background-position: center top;
+    }
+    .next {
+        right: 10rem;
+    }
+    .prev {
+        left: 10rem;
+    }
     .goods-block {
         height: 308rem;
         width: 140rem;
@@ -1058,6 +1060,10 @@ footer {
         text-align: center;
         display: inline-block;
         width: 180rem;
+    }
+    .map {
+        background: url('../images/thumbnails/world.png') center bottom no-repeat;
+        height: 593px;
     }
     .zip-address {
         width: 520rem;
@@ -1161,6 +1167,11 @@ footer {
     }
     .social-line {
         display: none;
+    }
+    .map {
+        background: url('../images/thumbnails/world.png') center top no-repeat;
+        height: 594rem;
+        width: 100%;
     }
     .zip-address {
         width: 640rem;
