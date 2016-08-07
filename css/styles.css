@@ -137,8 +137,6 @@ body {
 .adv-topic {
     color: #333333;
     font-family: 'oswaldlight', sans-serif;
-    font-size: 40rem;
-    margin-top: 45rem;
     position: relative;
     text-align: center;
     text-transform: uppercase;
@@ -149,7 +147,6 @@ body {
     display: block;
     z-index: -1;
     left:0;
-    top: 69rem;
     width:100%;
     border-bottom: 2rem solid #333333;
 }
@@ -159,7 +156,6 @@ body {
     display: block;
     z-index: -1;
     left:0;
-    top: 74rem;
     width:100%;
     border-bottom: 1rem solid #333333;
 }
@@ -251,16 +247,20 @@ nav {
 }
 /* Thumbnails ---------------------------------------------------------------*/
 .jackets {
-    background: url(../images/thumbnails/jackets.png) center center no-repeat;
+    background: url(../images/thumbnails/jackets.png) center top no-repeat;
+    background-size: cover;
 }
 .suites {
     background: url(../images/thumbnails/suits.png) center bottom no-repeat;
+    background-size: cover;
 }
 .jerseys {
     background: url(../images/thumbnails/jerseys.png) center center no-repeat;
+    background-size: cover;
 }
 .shoes {
     background: url(../images/thumbnails/shoes.png) center center no-repeat;
+    background-size: cover;
 }
 .boot1-pic {
     background: url(../images/thumbnails/boots1.png) center center no-repeat;
@@ -450,7 +450,6 @@ header {
     color: #999999;
 }
 .adv-wrapper {
-    margin: 42rem auto 0 auto;
     text-align: justify;
 }
 .adv-wrapper:after {
@@ -459,20 +458,12 @@ header {
     width: 100%;
 }
 .adv-blocks {
-    width: 140rem;
-    height: 110rem;
     font-family: 'aleoregular', sans-serif;
-    font-size: 36rem;
-    display: inline-block;
     position: relative;
 }
 .adv-blocks > p {
     position: absolute;
-    left: 20rem;
-    bottom: 18rem;
     color: #ffffff;
-    margin: 0;
-    line-height: 25rem;
 }
 .adv-text {
     text-align: center;
@@ -519,14 +510,9 @@ header {
 .goods-topic {
     font-family: 'oswaldlight', sans-serif;
     color: #434343;
-    font-size: 50rem;
     font-weight: lighter;
     display: inline-block;
     text-transform: uppercase;
-    margin-top: 50rem;
-}
-.goods-topic:first-child {
-    margin-top: 46rem;
 }
 .goods-subtopic {
     color: #999999;
@@ -690,22 +676,6 @@ header {
     margin-top: 64rem;
     position: relative;
 }
-.zip-address::-webkit-input-placeholder {
-    color:#999999;
-    line-height: 60rem;
-}
-.zip-address::-moz-placeholder          {
-    color:#999999;
-    line-height: 60rem;
-}
-.zip-address:-moz-placeholder           {
-    color:#999999;
-    line-height: 60rem;
-}
-.zip-address:-ms-input-placeholder      {
-    color:#999999;
-    line-height: 60rem;
-}
 .location-icon {
     height: 25rem;
     width: 18rem;
@@ -716,9 +686,10 @@ header {
     border-radius: 0;
     border: 1rem solid #cccccc;
     color: #333333;
+    padding-top: 5rem;
     padding-left: 30rem;
     text-align: center;
-    font-size: 30rem;
+    font-size: 32rem;
     font-family: 'oswaldlight', sans-serif;
     height: 56rem;
 }
@@ -1077,6 +1048,62 @@ footer {
         height: 55rem;
         width: 30rem;
     }
+    .adv-topic {
+        font-size: 40rem;
+        margin-top: 60rem;
+    }
+    .adv-topic:after {
+        top: 64rem;
+    }
+    .adv-topic:before {
+        top: 69rem;
+    }
+    .adv-wrapper {
+        margin: 58rem auto 0 auto;
+        text-align: justify;
+    }
+    .adv-blocks {
+        width: 140rem;
+        height: 110rem;
+        font-family: 'aleoregular', sans-serif;
+        font-size: 30rem;
+        display: inline-block;
+        position: relative;
+    }
+    .adv-blocks > p {
+        position: absolute;
+        left: 22rem;
+        bottom: 18rem;
+        color: #ffffff;
+        line-height: 25rem;
+    }
+    .adv-text > h2 {
+        margin: 29rem auto 0 auto;
+    }
+    .adv-text > p {
+        margin: 31rem 0 72rem 0;
+        line-height: 30rem;
+    }
+    .goods-topic {
+        font-size: 50rem;
+        margin-top: 90rem;
+    }
+    .recent {
+        font-size: 50rem;
+        margin-top: 78rem;
+    }
+    .goods-subtopic {
+        margin-top: 10rem;
+    }
+    .goods-main-block {
+        margin: 30rem auto 0 auto;
+    }
+    .goods-main-block:last-child:after {
+        margin-bottom: 97rem;
+    }
+    .adv-picture-text {
+        display: none;
+    }
     .goods-block {
         height: 308rem;
         width: 140rem;
@@ -1090,9 +1117,24 @@ footer {
         height: 123rem;
         width: 140rem;
     }
+    .price-name {
+        padding-left: 30rem;
+        padding-right: 30rem;
+        padding-top: 15rem;
+        line-height: 30rem;
+    }
+    .smallLine {
+        width: 97rem;
+        height: 1rem;
+        margin: 1rem auto 0 auto;
+    }
+    .price {
+        margin-top: 12rem;
+    }
     .add-to-cart {
         height: 45rem;
         width: 140rem;
+        line-height: 50rem;
     }
     .discount {
         color: #ff3366;
@@ -1108,8 +1150,12 @@ footer {
         height: 40rem;
     }
     .social-main-block {
-        width: 100%;
+        width: 660rem;
+        margin: 78rem auto 50rem auto;
         text-align: justify;
+    }
+    .social .container {
+        width: 700rem!important;
     }
     .social-main-block:after {
         content: "";
@@ -1120,17 +1166,77 @@ footer {
         text-align: center;
         display: inline-block;
         width: 180rem;
+        height: 301rem;
+        vertical-align: top;
+    }
+    .social-topic {
+        margin-top: 31rem;
+        font-size: 25rem;
+    }
+    .social-text {
+        font-size: 17rem;
+        margin-top: 16rem;
+        line-height: 22rem;
+        height: 80rem;
+    }
+    .social-link {
+        margin-top: 19rem;
+    }
+    .social-line {
+        height: 95rem;
+        width: 1rem;
+        background-color: #e9e9e9;
+        display: inline-block;
+        margin-top: 147rem;
+    }
+    .twitter-topic {
+        letter-spacing: 0.4rem;
+        margin-top: 55rem;
+    }
+    .twitter-text {
+        text-align: center;
+        margin: 15rem auto 22rem auto;
+        line-height: 30rem;
+        font-size: 23rem;
+        letter-spacing: -0.1rem;
+    }
+    .locator {
+        font-size: 51rem;
+        letter-spacing: -0.6rem;
+        line-height: 200rem;
+        height: 173rem;
     }
     .map {
         height: 593px;
     }
+    .zip-address-wrapper {
+        margin-top: 63rem;
+    }
     .zip-address {
         width: 520rem;
-        border: 1rem solid #333333;
+        border: 1rem solid #cccccc;
+        height: 55rem;
+        line-height: 70rem;
+    }
+    .zip-address::-webkit-input-placeholder {
+        color:#999999;
+        line-height: 70rem;
+    }
+    .zip-address::-moz-placeholder          {
+        color:#999999;
+        line-height: 70rem;
+    }
+    .zip-address:-moz-placeholder           {
+        color:#999999;
+        line-height: 70rem;
+    }
+    .zip-address:-ms-input-placeholder      {
+        color:#999999;
+        line-height: 70rem;
     }
     .location-icon {
-        left: 190rem;
-        top: 14rem;
+        left: 183rem;
+        top: 17rem;
     }
     .footer-social-links,
     .footer-general-links,
@@ -1219,14 +1325,38 @@ footer {
         height: 69rem;
         width: 32rem;
     }
+    .adv-topic {
+        font-size: 40rem;
+        margin-top: 45rem;
+    }
+    .adv-topic:after {
+        top: 69rem;
+    }
+    .adv-topic:before {
+        top: 74rem;
+    }
+    .adv-wrapper {
+        margin: 42rem auto 0 auto;
+    }
     .adv-blocks {
         width: 220rem;
         height: 170rem;
+        font-size: 36rem;
+        display: inline-block;
+    }
+    .adv-blocks > p {
+        left: 20rem;
+        bottom: 18rem;
+        line-height: 25rem;
     }
     .goods-block {
         height: 360rem;
         width: 220rem;
         display: inline-block;
+    }
+    .goods-topic {
+        font-size: 50rem;
+        margin-top: 46rem;
     }
     .goods-pic {
         width: 220rem;
