@@ -1195,7 +1195,7 @@ footer {
     }
     .twitter-text {
         text-align: center;
-        margin: 15rem auto 22rem auto;
+        margin: 15rem auto 23rem auto;
         line-height: 30rem;
         font-size: 23rem;
         letter-spacing: -0.1rem;
@@ -1234,9 +1234,33 @@ footer {
         color:#999999;
         line-height: 70rem;
     }
+    .range-radius {
+        margin-top:45rem;
+        padding-left: 22rem;
+    }
     .location-icon {
         left: 183rem;
         top: 17rem;
+    }
+    .range-radius select {
+        font-size: 40rem;
+        background: url('../images/icons/selector-button.png') 128rem center no-repeat;
+        padding-left: 3rem;
+    }
+    .range-radius label {
+        font-size: 39rem;
+    }
+    .footer-wrapper {
+        margin-top: 49rem;
+    }
+    .footer-social-links h1 {;
+        font-size: 30rem;
+        line-height: 31rem;
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+    .footer-social-links p {
+        margin-top: 17rem;
     }
     .footer-social-links,
     .footer-general-links,
@@ -1245,6 +1269,11 @@ footer {
         width: 140rem;
         display: inline-block;
         vertical-align: top;
+    }
+    .footer-general-links h1,
+    .footer-blogs h1,
+    .subscription-forms h1 {
+        margin-bottom: 34rem;
     }
     .icon-link {
         height: 34rem;
