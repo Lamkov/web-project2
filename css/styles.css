@@ -916,66 +916,164 @@ footer {
     }
     .carousel-mobile-button {
         display: block;
-        margin: 30rem auto 0 auto;
-        width: 140rem;
-        height: 40rem;
+        margin: 39rem auto 0 auto;
+        width: 153rem;
+        height: 47rem;
         color: #ffffff;
         text-align: center;
-        border: 2rem solid #ffffff;
+        border: 3rem solid #ffffff;
         position: relative;
-        background: transparent;
+        background: #000000;
         border-radius: 0;
+        font-family: 'oswald_regularregular', sans-serif;
+        font-size: 20rem;
+        padding-top:4rem;
     }
     .carousel-text-1 {
         text-align: center;
         display: block;
-        margin: 100rem 0 0 0;
+        margin: 50rem 0 0 0;
         color: #ffffff;
         font-family: 'aleoregular', sans-serif;
-        font-size: 30rem;
+        font-size: 38rem;
     }
     .adv-topic {
-        font-size: 30rem;
-        margin-top: 60rem;
+        font-size: 35rem;
+        margin-top: 45rem;
+        font-weight: normal;
     }
     .adv-topic:after {
-        top: 64rem;
+        top: 59rem;
     }
     .adv-topic:before {
-        top: 69rem;
+        top: 64rem;
+    }
+    .adv-wrapper {
+        margin: 47rem auto 0 auto;
+    }
+    .adv-text > h2 {
+        margin: 33rem auto 0 auto;
+        width: 250rem;
+        line-height: 35rem;
+    }
+    .adv-text > p {
+        margin: 16rem auto 72rem auto;
+        line-height: 30rem;
     }
     .adv-blocks {
-        width: 140rem;
-        height: 110rem;
+        width: 220rem;
+        height: 170rem;
+        margin: 30rem auto 0 auto;
+
+    }
+    .adv-blocks > p {
+        position: absolute;
+        left: 20rem;
+        bottom: 18rem;
+        color: #ffffff;
+        line-height: 25rem;
+        font-family: 'aleoregular', sans-serif;
+        font-size: 36rem;
+    }
+    .adv-picture-text {
+        display: none;
+    }
+    .goods .container {
+        display: block;
+    }
+    .goods-topic {
+        font-size: 38rem;
+        margin-top: 42rem;
+        font-weight: normal;
+        letter-spacing: 0.5rem;
+    }
+    .goods-topic:after {
+        content:"";
+        position:absolute;
+        display: block;
+        left:0;
+        width:100%;
+        border-bottom: 1rem solid #eaeaea;
+        top: 95rem;
+    }
+    .goods-topic:before {
+        content:"";
+        position:absolute;
+        display: block;
+        left:0;
+        width:100%;
+        border-bottom: 1rem solid #eaeaea;
+        top: 300rem;
+    }
+    .goods-topic.recent:after {
+        top: 1854rem;
+    }
+    .goods-topic.recent:before {
+        top: 1857rem;
+    }
+    .recent {
+      margin-top: 90rem;
+        margin-bottom: 12rem;
+        font-size: 40rem;
+    }
+    .goods-subtopic {
+        margin-top: 32rem;
+    }
+    .recent-subtopic {
+        margin-bottom: 33rem;
     }
     .goods-block {
-        height: 308rem;
-        width: 140rem;
+        height: 359rem;
+        width: 220rem;
+        margin-top: 27rem;
+    }
+    .goods-main-block {
+        margin: 41rem auto 0 auto;
+        display: block;
+        width: 220rem;
     }
     .goods-pic {
-        width: 140rem;
-        height: 140rem;
+        width: 220rem;
+        height: 220rem;
     }
     .price-tag {
-        height: 123rem;
-        width: 140rem;
+        border-top: 1rem solid #ebeae5;
+        height: 94rem;
+        width: 220rem;
+    }
+    .price-name {
+        font-size: 18rem;
+        padding-top: 21rem;
     }
     .add-to-cart {
         height: 45rem;
-        width: 140rem;
+        width: 220rem;
     }
     .discount {
         color: #ff3366;
     }
     .sale {
-        top: 80rem;
-        width: 140rem;
+        top: 160rem;
+        width: 220rem;
         height: 40rem;
     }
     .new {
-        top: 80rem;
-        width: 140rem;
+        top: 160rem;
+        width: 220rem;
         height: 40rem;
+    }
+    .special-margin-1 {
+        margin-top: 22rem;
+    }
+    .special-margin-2 {
+        margin-top: 22rem;
+    }
+    .goods-main-block:last-child:after {
+        margin-bottom: 61rem;
+    }
+    .social-main-block {
+        margin-top: 53rem;
+        margin-bottom: 67rem;
     }
     .social-line {
         margin: 55rem auto 45rem auto;
@@ -1101,6 +1199,12 @@ footer {
     .carousel-image-1, .carousel-image-2, .carousel-image-3 {
         height: 400rem;
         background-position: center top;
+    }
+    .carousel-mobile-button {
+        display: none;
+    }
+    .carousel-text-1 {
+        display: none;
     }
     .next {
         right: 0;
@@ -1432,6 +1536,12 @@ footer {
     }
     .search-wrapper {
         width: 247rem;
+    }
+    .carousel-mobile-button {
+        display: none;
+    }
+    .carousel-text-1 {
+        display: none;
     }
     .next {
         top: 200rem;
