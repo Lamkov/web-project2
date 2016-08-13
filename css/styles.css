@@ -661,10 +661,8 @@ header {
     letter-spacing: -0.6rem;
     text-align: center;
     text-transform: uppercase;
-    line-height: 200rem;
     color: #ffffff;
     height: 172rem;
-    overflow: hidden;
 }
 .zip-address-wrapper {
     text-align: center;
@@ -1073,20 +1071,171 @@ footer {
     }
     .social-main-block {
         margin-top: 53rem;
-        margin-bottom: 67rem;
+        margin-bottom: 72rem;
+    }
+    .social-topic {
+        margin-top: 37rem;
+    }
+    .social-link {
+        font-size: 18rem;
+        margin-top: 31rem;
     }
     .social-line {
-        margin: 55rem auto 45rem auto;
         height: 1rem;
         width: 93rem;
         background-color: #e9e9e9;
     }
+    .line-1 {
+        margin: 50rem auto 45rem auto;
+    }
+    .line-2 {
+        margin: 40rem auto 35rem auto;
+    }
+    .twitter-topic {
+        margin-top: 57rem;
+    }
+    .twitter-text {
+        margin: 25rem auto 25rem auto;
+        line-height: 19rem;
+        font-size: 17rem;
+        letter-spacing: -0.1rem;
+    }
     .map {
-        height: 300px;
+        height: 523rem;
+        background-position: center;
+    }
+    .locator {
+        padding-top: 45rem;
+        font-size: 40rem;
+        padding-left: 30rem;
+        padding-right: 30rem;
+        line-height: 50rem;
+    }
+    .zip-address-wrapper {
+        margin-top: 63rem;
     }
     .zip-address {
-        width: 200rem;
-        border: 1rem solid #333333;
+        width: 100%;
+        border: 1rem solid #cccccc;
+        height: 55rem;
+        line-height: 70rem;
+    }
+    .zip-address::-webkit-input-placeholder {
+        color:#999999;
+        line-height: 70rem;
+    }
+    .zip-address::-moz-placeholder          {
+        color:#999999;
+        line-height: 70rem;
+    }
+    .zip-address:-moz-placeholder           {
+        color:#999999;
+        line-height: 70rem;
+    }
+    .zip-address:-ms-input-placeholder      {
+        color:#999999;
+        line-height: 70rem;
+    }
+    .range-radius {
+        margin-top: 26rem;
+        padding-left: 17rem;
+    }
+    .location-icon {
+        left: 23rem;
+        top: 17rem;
+    }
+    .range-radius select {
+        font-size: 40rem;
+        background: url('../images/icons/selector-button.png') 132rem center no-repeat;
+        padding-left: 1rem;
+    }
+    .range-radius label {
+        font-size: 39rem;
+    }
+    .search-radius-button-wrapper {
+        margin-top: 17rem;
+        text-align: center;
+    }
+    .search-radius-button {
+        padding-top: 7rem;
+        padding-right: 3rem;
+    }
+    .footer-wrapper {
+        margin-top: 48rem;
+    }
+    .footer-social-links p {
+        width: 60%;
+    }
+    .footer-social-links ul {
+        margin-top: 26rem;
+    }
+    .footer-social-links ul li {
+        list-style: none;
+        height: 34rem;
+        width: 34rem;
+        margin-right: 13rem;
+    }
+    .footer-social-links:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .mobile-visible {
+        display: none !important;
+    }
+    .icon-link {
+        height: 34rem;
+        width: 34rem;
+        margin: 0 0 0 0;
+        display: inline-block;
+    }
+    .footer-general-links {
+        margin-top: 45rem;
+    }
+    .footer-general-links ul li {
+        margin-top: 22rem;
+    }
+    .footer-general-links ul li:first-child {
+        margin-top: 35rem;
+    }
+    .footer-general-links ul li:last-child {
+        margin-top: 20rem;
+    }
+    .footer-blogs {
+        margin-top: 54rem;
+    }
+    .footer-blogs h3 {
+        margin-top: 35rem;
+    }
+    .subscription-forms {
+        margin-top: 57rem;
+    }
+    .subscription-forms h1 {
+        margin-bottom: 33rem;
+    }
+    .subscription input {
+        line-height: 34rem;
+    }
+    #gender {
+        margin-top: 14rem;
+        width: 100%;
+        height: 35rem;
+    }
+    .subscription select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-overflow: '';
+        background: url('../images/icons/selector-gender-button.png') 280rem 16rem no-repeat;
+        padding-left: 10rem;
+    }
+    .subscription-button {
+        width: 100%;
+        height: 36rem;
+        margin-top: 22rem;
+        display: block;
+        padding-top: 3rem;
+        margin-bottom: 53rem;
+        letter-spacing: 1.2rem;
     }
 }
 /* Tablet View --------------------------------------------------------------*/
@@ -1645,6 +1794,18 @@ footer {
     }
     .zip-address {
         width: 640rem;
+    }
+    .locator {
+        background-color: rgba(18, 204, 226, 0.6);
+        font-family: 'oswaldlight', sans-serif;
+        font-size: 51rem;
+        letter-spacing: -0.6rem;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 200rem;
+        color: #ffffff;
+        height: 172rem;
+        overflow: hidden;
     }
     .location-icon {
         left: 344rem;
