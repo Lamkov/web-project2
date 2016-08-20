@@ -130,16 +130,14 @@ body {
     margin-top: -19.6rem;
 }
 
-/* Scaffolding --------------------------------------------------------------*/
-
-
 /* Typography ---------------------------------------------------------------*/
-.adv-topic {
+.adv-topic h1 {
     color: #333333;
     font-family: 'oswaldlight', sans-serif;
     position: relative;
     text-align: center;
     text-transform: uppercase;
+    font-weight: lighter;
 }
 .adv-topic:after {
     content:"";
@@ -160,16 +158,10 @@ body {
     border-bottom: 1rem solid #333333;
 }
 
-/* Iconography --------------------------------------------------------------*/
-
-/* Buttons ------------------------------------------------------------------*/
-
 /* Forms --------------------------------------------------------------------*/
 :focus {
     outline: 0;
 }
-
-/* Container sizes ----------------------------------------------------------*/
 
 /* Navbar -------------------------------------------------------------------*/
 nav {
@@ -177,6 +169,14 @@ nav {
     border-top: 1rem solid #cccccc;
 }
 /* Search -------------------------------------------------------------------*/
+.search-button {
+    background: url('../images/icons/Search.png') center no-repeat;
+    height: 35rem;
+    width: 35rem;
+    position: absolute;
+    right: 30rem;
+    cursor: pointer;
+}
 .search-wrapper {
     height: 35rem;
     float: right;
@@ -190,6 +190,7 @@ nav {
     line-height: 35rem;
     color: #999999;
     padding-left: 12rem;
+    width: 100%;
 }
 .search-radius-button-wrapper {
     margin-top: 37rem;
@@ -203,6 +204,10 @@ nav {
     border-radius: 0;
     background-color: #167c9a;
     color: #ffffff;
+    cursor: pointer;
+}
+.search-radius-button:hover, .search-radius-button:active {
+    background-color: #49ABE0;
 }
 /* Tabs ---------------------------------------------------------------------*/
 .tabs li {
@@ -344,25 +349,23 @@ nav {
 .carousel-image-3 {
     background: url(../images/thumbnails/carousel-image.png) no-repeat;
 }
-.prev {
+.prev,
+.next {
+    background-size: contain;
     position: absolute;
-    top: 200rem;
-    left: -60rem;
+    top: 50%;
+    margin-top: -34.5rem;
     height: 69rem;
     width: 32rem;
+}
+
+.prev {
+    left: -60rem;
     background: url('../images/arrow-left.png') center no-repeat;
-    background-size: contain;
-    cursor:pointer;
 }
 .next {
-    position: absolute;
-    top: 200rem;
     right: -60rem;
-    height: 69rem;
-    width: 32rem;
     background: url('../images/arrow-right.png') center no-repeat;
-    background-size: contain;
-    cursor:pointer;
 }
 .content {
     list-style: none;
@@ -444,6 +447,9 @@ header {
 .total-sum {
     color: #999999;
 }
+.advertisement .container {
+    padding: 0;
+}
 .adv-wrapper {
     text-align: justify;
 }
@@ -463,7 +469,7 @@ header {
 .adv-text {
     text-align: center;
 }
-.adv-text > h2 {
+.adv-text > h3 {
     font-family: 'oswaldlight', sans-serif;
     font-size: 30rem;
     font-weight: normal;
@@ -502,7 +508,7 @@ header {
 .goods .container {
     text-align: center;
 }
-.goods-topic {
+.goods-topic h2 {
     font-family: 'oswaldlight', sans-serif;
     color: #434343;
     font-weight: lighter;
@@ -515,6 +521,10 @@ header {
     font-size: 18rem;
     text-align: center;
     margin-top: 7rem;
+}
+.goods-subtopic a {
+    text-decoration: none;
+    color: #999999;
 }
 .price-tag {
     background-color: #cccccc;
@@ -728,7 +738,7 @@ footer {
     width: 100%;
     display: inline-block;
 }
-.footer-social-links h1 {
+.footer-social-links h3 {
     font-family: 'aleoregular', sans-serif;
     color: #434343;
     text-transform: uppercase;
@@ -826,6 +836,10 @@ footer {
     width: 130rem;
     height: 36rem;
     margin-top: 21rem;
+    cursor: pointer;
+}
+.subscription-button:hover, .subscription-button:active {
+    background-color: #49ABE0;
 }
 /* Mobile View --------------------------------------------------------------*/
 @media (max-width: 767px) {
@@ -897,15 +911,18 @@ footer {
         background-position: 50% 40%;
         background-size: auto;
     }
+    .next,
+    .prev {
+        margin-top: 0;
+    }
+
     .next {
         right: 10rem;
-        top: 165rem;
         height: 70rem;
         width: 35rem;
     }
     .prev {
         left: 10rem;
-        top: 165rem;
         height: 70rem;
         width: 35rem;
     }
@@ -935,7 +952,10 @@ footer {
         font-family: 'aleoregular', sans-serif;
         font-size: 38rem;
     }
-    .adv-topic {
+    .carousel-text-2 {
+        display: none;
+    }
+    .adv-topic h1 {
         font-size: 35rem;
         margin-top: 45rem;
         font-weight: normal;
@@ -949,7 +969,7 @@ footer {
     .adv-wrapper {
         margin: 47rem auto 0 auto;
     }
-    .adv-text > h2 {
+    .adv-text > h3 {
         margin: 33rem auto 0 auto;
         width: 250rem;
         line-height: 35rem;
@@ -962,7 +982,7 @@ footer {
         width: 220rem;
         height: 170rem;
         margin: 30rem auto 0 auto;
-
+        display: block;
     }
     .adv-blocks > p {
         position: absolute;
@@ -979,7 +999,7 @@ footer {
     .goods .container {
         display: block;
     }
-    .goods-topic {
+    .goods-topic h2 {
         font-size: 38rem;
         margin-top: 42rem;
         font-weight: normal;
@@ -1009,7 +1029,7 @@ footer {
     .goods-topic.recent:before {
         top: 1857rem;
     }
-    .recent {
+    .recent h2 {
       margin-top: 90rem;
         margin-bottom: 12rem;
         font-size: 40rem;
@@ -1342,7 +1362,7 @@ footer {
         background: url('../images/icons/Search.png') center no-repeat;
         background-size: 15rem;
     }
-    .search-input {
+    .search-input, .search-button {
         display: none;
     }
     .carousel-image-1, .carousel-image-2, .carousel-image-3 {
@@ -1350,25 +1370,55 @@ footer {
         background-position: center top;
     }
     .carousel-mobile-button {
-        display: none;
+        display: block;
+        margin: 37rem 0 0 300rem;
+        width: 153rem;
+        height: 47rem;
+        color: #ffffff;
+        border: 3rem solid #ffffff;
+        position: relative;
+        background: #000000;
+        border-radius: 0;
+        font-family: 'oswald_regularregular', sans-serif;
+        font-size: 20rem;
+        padding-top:4rem;
+        cursor: pointer;
+    }
+    .carousel-image-1 {
+        overflow: hidden;
     }
     .carousel-text-1 {
-        display: none;
+        display: block;
+        margin: 30rem 0 0 300rem;
+        color: #ffffff;
+        font-family: 'aleoregular', sans-serif;
+        font-size: 38rem;
+    }
+    .carousel-text-2 {
+        display: block;
+        margin: 20rem 0 0 300rem;
+        color: #333333!important;
+        font-family: 'aleolight', sans-serif;
+        font-size: 24rem;
+        font-weight: bold;
+        padding-right: 30rem;
+    }
+    .next,
+    .prev {
+        margin-top: -27.5rem;
     }
     .next {
         right: 0;
-        top: 137rem;
         height: 55rem;
         width: 30rem;
     }
     .prev {
         left: 0;
-        top: 137rem;
         height: 55rem;
         width: 30rem;
     }
-    .adv-topic {
-        font-size: 40rem;
+    .adv-topic h1 {
+        font-size: 50rem;
         margin-top: 60rem;
     }
     .adv-topic:after {
@@ -1396,18 +1446,18 @@ footer {
         color: #ffffff;
         line-height: 25rem;
     }
-    .adv-text > h2 {
+    .adv-text > h3 {
         margin: 29rem auto 0 auto;
     }
     .adv-text > p {
         margin: 31rem 0 72rem 0;
         line-height: 30rem;
     }
-    .goods-topic {
+    .goods-topic h2 {
         font-size: 50rem;
         margin-top: 90rem;
     }
-    .recent {
+    .recent h2 {
         font-size: 50rem;
         margin-top: 78rem;
     }
@@ -1572,7 +1622,7 @@ footer {
     .footer-wrapper {
         margin-top: 49rem;
     }
-    .footer-social-links h1 {;
+    .footer-social-links h3 {;
         font-size: 30rem;
         line-height: 31rem;
         padding-left: 3rem;
@@ -1687,10 +1737,37 @@ footer {
         width: 247rem;
     }
     .carousel-mobile-button {
-        display: none;
+        display: block;
+        margin: 37rem 0 0 500rem;
+        width: 153rem;
+        height: 47rem;
+        color: #ffffff;
+        border: 3rem solid #ffffff;
+        position: relative;
+        background: #000000;
+        border-radius: 0;
+        font-family: 'oswald_regularregular', sans-serif;
+        font-size: 20rem;
+        padding-top:4rem;
+        cursor: pointer;
+    }
+    .carousel-image-1 {
+        overflow: hidden;
     }
     .carousel-text-1 {
-        display: none;
+        display: block;
+        margin: 50rem 0 0 500rem;
+        color: #ffffff;
+        font-family: 'aleoregular', sans-serif;
+        font-size: 48rem;
+    }
+    .carousel-text-2 {
+        display: block;
+        margin: 20rem 0 0 500rem;
+        color: #333333!important;
+        font-family: 'aleolight', sans-serif;
+        font-size: 24rem;
+        font-weight: bold;
     }
     .next {
         top: 200rem;
@@ -1704,8 +1781,8 @@ footer {
         height: 69rem;
         width: 32rem;
     }
-    .adv-topic {
-        font-size: 40rem;
+    .adv-topic h1 {
+        font-size: 50rem;
         margin-top: 45rem;
     }
     .adv-topic:after {
@@ -1733,7 +1810,7 @@ footer {
         width: 220rem;
         display: inline-block;
     }
-    .goods-topic {
+    .goods-topic h2 {
         font-size: 50rem;
         margin-top: 46rem;
     }
