@@ -27,4 +27,29 @@ $(document).ready(function(){
         images[currentItem].stop().fadeIn(delay);
         return false;
     });
+    $('nav ul li:first-child').mouseenter(function(){
+        $('.menu-full').slideDown(500);
+    })
+    $('nav ul li:first-child' && '.menu-full').mouseleave(function(){
+        $('.menu-full').slideUp(500);
+    })
+
+
+    var mouse_is_inside = false;
+
+    $(document).ready(function()
+    {
+        $('nav' || '.menu-full').hover(function(){
+            mouse_is_inside=true;
+        }, function(){
+            mouse_is_inside=false;
+        });
+
+        $("body").mouseup(function(){
+            if(! mouse_is_inside) $('.menu-full').slideUp(500);
+        });
+    });
+    $(".mobile-button").on("click",function (e) {
+        $('.menu-full').slideDown(500);
+    });
 });
