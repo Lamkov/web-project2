@@ -49,7 +49,11 @@ $(document).ready(function(){
             if(! mouse_is_inside) $('.menu-full').slideUp(500);
         });
     });
-    $(".mobile-button").on("click",function (e) {
-        $('.menu-full').slideDown(500);
-    });
+    $(".mobile-button").click(function(){
+        if($('.mobile-menu').css('display') == 'none' ){
+            $('.mobile-menu').slideDown(500);
+        } else if ($('.mobile-menu').css('display') == 'block' ) {
+            $('.mobile-menu').slideUp(500);
+        }
+        })
 });
