@@ -59,10 +59,10 @@ $(document).ready(function(){
     $(".mobile-menu-primary").click(function(){
         if($('.dropdown-menu').css('display') == 'none' ) {
             $(this).children(".dropdown-menu").slideDown(500);
-            $(this).children(".drop-icon").removeClass("drop-icon-closed").addClass("drop-icon-opened");
+            $(this).find(".drop-icon").removeClass("drop-icon-closed").addClass("drop-icon-opened");
         } else if ($('.dropdown-menu').css('display') == 'block' ) {
             $('.dropdown-menu').slideUp(500);
-            $(this).children(".drop-icon").removeClass("drop-icon-opened").addClass("drop-icon-closed");
+            $(this).find(".drop-icon").removeClass("drop-icon-opened").addClass("drop-icon-closed");
         }
     })
 });
